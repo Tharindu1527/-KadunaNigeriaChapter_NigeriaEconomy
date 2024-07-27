@@ -15,6 +15,39 @@ To create a quick-view dashboard that provides in-depth information on the price
 
 The goal is to present a graphical view of selected items based on basic living needs, including food items, transportation costs, taxation, wages, healthcare, and essential commodities, and to track their price increases. Additionally, the project aims to compare the value of the Nigerian Naira against the US Dollar and analyze how these prices vary over time.
 
+### Project Structure
+
+1.  **Data Collection**
+    
+    *   Sourced data from the Central Bank of Nigeria (CBN), National Bureau of Statistics (NBS), World Bank, and FRED (Federal Reserve Economic Data).
+    
+2.  **Data Preprocessing**
+    
+    *   Cleaned the data, handling missing values, and transforming it into a suitable format for time series analysis.
+    
+3.  **Data Visualizations & Exploratory Analysis**
+    
+    *   Plotting the time series data to identify trends, seasonality, and other patterns.
+    *   Examining key statistics like mean, variance, and autocorrelation to understand the data's characteristics.
+    *   Cleaned and transformed raw data into a comprehensive dataframe named `merged_data`.
+    *   Conducted exploratory analysis to understand the underlying patterns and trends in the data.
+    
+4.  **Modeling**
+    
+    *   Developed predictive models to forecast GDP and CPI values.
+    *   Assessing model accuracy using metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), or Root Mean Squared Error (RMSE).
+    *   Validating the model's performance on historical data to ensure its reliability.
+    *   Generating GDP forecasts for future years based on the trained model.
+    *   Quantifying the uncertainty associated with the predictions.
+    
+5.  **Dashboard (Streamlit)**
+    
+    *   Built an interactive dashboard using Streamlit to visualize the results of the analysis and modeling.
+    *   Enabled users to download the `merged_data` dataframe for further analysis.
+    *	Veiw notebooks and plots
+    *   Veiw EDA and download report
+    *   Predict GDP and CPI 
+
 **Main Requirements:**
 Check the requirements.txt file for more information.
 * streamlit
